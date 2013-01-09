@@ -99,7 +99,7 @@ a {
 
 .nested_messages {
   margin-left: 30px;
-  border-left: dashed 1px #ccc;
+  border-left: 1px dotted #DDF;
 }
 
 .nested_messages .nested_messages .nested_messages .nested_messages .nested_messages .nested_messages .nested_messages {
