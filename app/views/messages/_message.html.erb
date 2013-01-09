@@ -1,10 +1,12 @@
 <div class="message">
-  <div class="created_at"><%= message.created_at.strftime("%B %d, %Y") %></div>
+  <div class="created_at"><%= time_ago_in_words(message.created_at) %>前</div>
   <div class="content">
-    <%= link_to message.content, message %>
+    <%= message.content %>
   </div>
   <div class="actions">
-    <%= link_to "Reply", new_message_path(:parent_id => message) %> |
-    <%= link_to "Destroy", message, :confirm => "Are you sure?", :method => :delete %>
+    <%= link_to "#", message %> |
+    <%= link_to("*", message.parent) + ' |' unless message.is_root?  %>
+    <%= link_to "回复", new_message_path(:parent_id => message) %> |
+    <%= link_to "删除", message, :confirm => "Are you sure?", :method => :delete %>
   </div>
 </div>

@@ -4,6 +4,8 @@ gem 'rails', '3.2.9'
 
 gem 'ancestry'
 
+gem 'rails-i18n'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
