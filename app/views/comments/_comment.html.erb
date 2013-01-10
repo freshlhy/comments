@@ -1,0 +1,17 @@
+<div class="comment">
+  <div class="avatar30">
+    <%= image_tag("31.png", :size => "30x30", :alt => "头像") %>
+  </div>
+  <div class="comment_body">
+    <div class="created_at"><%= time_ago_in_words(comment.created_at) %>前</div>
+    <div class="content">
+      <p><%= comment.content %></p>
+    </div>
+    <div class="actions">
+      <%= link_to "#", comment %>
+      <%= link_to("*", comment.parent) unless comment.is_root? %>
+      <%= link_to "回复", new_comment_path(:parent_id => comment) %>
+      <%= link_to "删除", comment, :confirm => "Are you sure?", :method => :delete %>
+    </div>
+  </div>
+</div>

@@ -1,107 +1,76 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, button, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: 'WenQuanYi Micro Hei Mono', 'WenQuanYi Micro Hei', 'Microsoft Yahei Mono', 'Microsoft Yahei', sans-serif;
 }
 
 a img {
-  border: none;
+    border: none;
 }
 
 a {
-  color: #26709A;
+    color: #26709A;
 }
 
 .clear {
-  clear: both;
-  height: 0;
-  overflow: hidden;
+    clear: both;
+    height: 0;
+    overflow: hidden;
 }
 
-#container {
-  width: 75%;
-  margin: 0 auto;
-  background-color: #FFF;
-  padding: 20px 40px;
-  border: solid 1px black;
-  margin-top: 20px;
+.comment {
+    margin: 5px 0;
+    width: 550px;
+    position: relative;
 }
 
-#flash_notice, #flash_error, #flash_alert {
-  padding: 5px 8px;
-  margin: 10px 0;
+.comment .avatar30 {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-#flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
+.comment .comment_body {
+    min-height: 35px;
+    _height: 35px;
+    position: relative;
+    line-height: 1.6;
+    text-align: left;
+    top: -4px;
+    margin-left: 35px;
 }
 
-#flash_error, #flash_alert {
-  background-color: #FCC;
-  border: solid 1px #C66;
+.comment .content a {
+    color: #000;
+    text-decoration: none;
 }
 
-.fieldWithErrors {
-  display: inline;
+.comment .created_at {
+    color: #9b9b9b;
+    font-size: 12px;
 }
 
-.error_messages {
-  width: 400px;
-  border: 2px solid #CF0000;
-  padding: 0px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-  font-size: 12px;
+.comment .content {
+    margin-top: -3px;
 }
 
-.error_messages h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 10px;
-  font-size: 12px;
-  margin: 0;
-  background-color: #c00;
-  color: #fff;
+.comment .actions {
+    font-size: 12px;
 }
 
-.error_messages p {
-  margin: 8px 10px;
+.comment .actions a {
+    text-decoration: none;
 }
 
-.error_messages ul {
-  margin: 0;
+.nested_comments {
+    margin-left: 30px;
+    border-left: 1px dotted #DDF;
 }
 
-.message {
-  margin: 3px 0;
-  padding: 3px 3px;
-  width: 550px;
-}
-
-.message .content a {
-  color: #000;
-  text-decoration: none;
-}
-
-.message .created_at {
-  color: #9b9b9b;
-  font-size: 12px;
-}
-
-.message .actions {
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.message .actions a {
-  text-decoration: none;
-}
-
-.nested_messages {
-  margin-left: 30px;
-  border-left: 1px dotted #DDF;
-}
-
-.nested_messages .nested_messages .nested_messages .nested_messages .nested_messages .nested_messages .nested_messages {
-  margin-left: 0;
+.nested_comments .nested_comments .nested_comments .nested_comments .nested_comments .nested_comments .nested_comments {
+    margin-left: 0;
 }

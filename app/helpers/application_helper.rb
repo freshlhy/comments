@@ -1,3 +1,3 @@
 module ApplicationHelper
-  include MessagesHelper
+  include CommentsHelper
 end
